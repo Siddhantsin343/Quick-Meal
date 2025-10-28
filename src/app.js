@@ -3,10 +3,9 @@ import ReactDOM, { createRoot } from "react-dom/client";
 
 // Css
 import './index.css'
-import Header from "./compontents/Header";
-
 
 /*---- Compontents ---- */
+import Header from "./compontents/Header";
 
 
 
