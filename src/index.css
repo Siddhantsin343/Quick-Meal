@@ -33,3 +33,15 @@
 .navItem li:hover {
   color: #007bff;
 }
+
+.Login-button{
+    font-size: 14px;
+    background-color: #FDD238;
+    border-radius: 4px;
+    padding: 6px 17px;
+    cursor: pointer;
+
+}
+.Login-button:hover{
+    background-color: #ccaa2d;
+}
