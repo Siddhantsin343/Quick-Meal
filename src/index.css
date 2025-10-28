@@ -1,0 +1,35 @@
+/* Header Component Styles */
+
+.navCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imgCon img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navItem ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navItem li {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navItem li:hover {
+  color: #007bff;
+}
