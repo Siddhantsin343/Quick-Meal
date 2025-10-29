@@ -34,14 +34,82 @@
   color: #007bff;
 }
 
-.Login-button{
-    font-size: 14px;
-    background-color: #FDD238;
-    border-radius: 4px;
-    padding: 6px 17px;
-    cursor: pointer;
-
+.Login-button {
+  font-size: 14px;
+  background-color: #FDD238;
+  border-radius: 4px;
+  padding: 6px 17px;
+  cursor: pointer;
 }
-.Login-button:hover{
-    background-color: #ccaa2d;
+
+.Login-button:hover {
+  background-color: #ccaa2d;
+}
+
+/* Body Component Styles */
+
+.bodyCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.searchBox {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.searchBox input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.searchBox button {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchBox button:hover {
+  background-color: #0056b3;
+}
+
+.filterBox {
+  display: flex;
+  justify-content: center;
+}
+
+.filterBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filterBtn:hover {
+  background-color: #218838;
+}
+
+.CardCon {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
 }
