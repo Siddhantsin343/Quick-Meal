@@ -1,3 +1,5 @@
+import Card from "./Card";
+
 const Body =  () =>(
     <div className="bodyCon">
         <div className="searchBox">
@@ -10,7 +12,7 @@ const Body =  () =>(
             </button>
         </div>
         <div className="CardCon">
-            
+            <Card/>
         </div>
     </div>
 )

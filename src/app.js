@@ -7,11 +7,13 @@ import "./index.css";
 /*---- Compontents ---- */
 import Header from "./compontents/Header";
 import Body from "./compontents/Body";
+import Footer from "./compontents/Footer";
 
 const App = () => (
   <>
     <Header />
     <Body />
+    <Footer/>
   </>
 );
 
