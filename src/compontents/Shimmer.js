@@ -1,10 +1,12 @@
 // ShimmerCard.js
 const ShimmerCard = () => {
   return (
-    <div className="shimmer-card">
-      <div className="shimmer-img shimmer"></div>
-      <div className="shimmer-text shimmer"></div>
-      <div className="shimmer-subtext shimmer"></div>
+    <div className="card shimmer-card">
+      <div className="cardImg shimmer-img shimmer"></div>
+      <h1 className="shimmer shimmer-text"></h1>
+      <h2 className="shimmer shimmer-text"></h2>
+      <h3 className="shimmer shimmer-text"></h3>
+      <h3 className="shimmer shimmer-text"></h3>
     </div>
   );
 };
