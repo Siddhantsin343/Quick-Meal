@@ -1,7 +1,11 @@
-/* Header Compontent*/
+import { useState , useEffect } from "react";
 import { LOGO_URL } from "../utils/constant";
 
+/* Header Compontent*/
 const Header = ()=>{
+
+const [logBtn, setlogBtn] = useState("Log-IN")
+
     return(
         <div className="navCon">
             <div className="imgCon">
@@ -13,7 +17,11 @@ const Header = ()=>{
                     <li>About us</li>
                     <li>Contact us</li>
                     <li>Cart</li>
-                    <button className="Login-button">Login</button>
+                    <button className="Login-button"
+                        onClick={()=>{
+                            logBtn === "Log-IN" ? setlogBtn("Log-OUT"): setlogBtn("Log-IN")
+                        }}
+                    >{logBtn}</button>
                 </ul>
             </div>
         </div>
