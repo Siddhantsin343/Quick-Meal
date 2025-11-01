@@ -1,6 +1,7 @@
 import Card from "./Card";
 import { useEffect, useState } from "react";
 import ShimmerCard from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -67,7 +68,8 @@ const Body = () => {
       {/* Restaurant Cards */}
       <div className="CardCon">
         {filteredRestaurants.map((restaurant) => (
-          <Card key={restaurant.info.id} reLis={restaurant.info} />
+           <Card key={restaurant?.info?.id} resData={restaurant.info} />
+          // --> this is use to make dynamic <Link  key={restaurant?.info?.id} to={"/restaurent/"+ restaurant.data.id}><Card resData={restaurant.info} /></Link>/>
         ))}
       </div>
     </div>
